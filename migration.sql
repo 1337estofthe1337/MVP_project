@@ -19,7 +19,6 @@ CREATE TYPE category_enum AS ENUM(
 CREATE TABLE IF NOT EXISTS users(
     id SERIAL PRIMARY KEY,
     username VARCHAR(255) NOT NULL,
-    password VARCHAR(255) NOT NULL,
     website_title VARCHAR(255)
 );
 
@@ -33,7 +32,6 @@ CREATE TABLE IF NOT EXISTS info(
     id SERIAL PRIMARY KEY,
     url VARCHAR(255) NOT NULL,
     description TEXT,
-    map BYTEA,
     category category_enum,
     gameid INTEGER REFERENCES games(id) ON DELETE CASCADE
 );

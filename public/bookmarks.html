@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Bookmarks - Bookmarks</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./bookmarks-script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="bookmarks-container">
+            <h1>User's RPG Bookmarks</h1>
+
+            <form id="addBookmarkForm">
+                <label for="gameTitle">Game Title:</label>
+                <input type="text" id="gameTitle" name="gameTitle" required>
+
+                <label for="url">URL:</label>
+                <input type="url" id="url" name="url" required>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description"></textarea>
+
+                <label for="category">Category:</label>
+                <select id="category" name="category">
+                    <option value="location/maps">Location/Maps</option>
+                    <option value="characters">Characters</option>
+                    <option value="equipment">Equipment</option>
+                    <option value="lore">Lore</option>
+                    <option value="online">Online</option>
+                    <option value="multiplayer">Multiplayer</option>
+                    <option value="easter-eggs">Easter Eggs</option>
+                    <option value="achievements">Achievements</option>
+                    <option value="video-guides">Video Guides</option>
+                    <option value="website-guides">Website Guides</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <button type="submit">Add Bookmark</button>
+            </form>
+
+            <hr>
+
+            <ul id="bookmarkList"></ul>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+<form id="addBookmark">
+            <label for="gameTitle">Game Title:</label>
+            <input type="text" id="gameTitle" name="gameTitle" required>
+
+            <label for="url">URL:</label>
+            <input type="url" id="url" name="url" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description"></textarea>
+
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+                <option value="location/maps">Location/Maps</option>
+                <option value="characters">Characters</option>
+                <option value="equipment">Equipment</option>
+                <option value="lore">Lore</option>
+                <option value="online">Online</option>
+                <option value="multiplayer">Multiplayer</option>
+                <option value="easter-eggs">Easter Eggs</option>
+                <option value="achievements">Achievements</option>
+                <option value="video-guides">Video Guides</option>
+                <option value="website-guides">Website Guides</option>
+                <option value="other">Other</option>
+            </select>
+
+            <button type="submit">Add Bookmark</button>
+        </form>
+
+        <ul id="bookmarkList">
+
+        </ul>
+    </div>
+</body>
+
+</html>

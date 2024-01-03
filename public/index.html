@@ -4,47 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RPG Bookmarks</title>
+    <title>RPG Bookmarks - HOME</title>
     <link rel="stylesheet" href="./styles.css">
-    <script src="./script.js"></script>
 </head>
 
 <body>
     <div class="container">
-        <h1>Personalized RPG Bookmarks</h1>
+        <div class="home-container">
+            <h1>RPG Bookmarks</h1>
 
-        <form id="addBookmark">
-            <label for="gameTitle">Game Title:</label>
-            <input type="text" id="gameTitle" name="gameTitle" required>
+            <!-- Dropdown menu for current users -->
+            <label for="userDropdown">Select User:</label>
+            <select id="userDropdown"></select>
 
-            <label for="url">URL:</label>
-            <input type="url" id="url" name="url" required>
-
-            <label for="description">Description:</label>
-            <textarea id="description" name="description"></textarea>
-
-            <label for="category">Category:</label>
-            <select id="category" name="category">
-                <option value="location/maps">Location/Maps</option>
-                <option value="characters">Characters</option>
-                <option value="equipment">Equipment</option>
-                <option value="lore">Lore</option>
-                <option value="online">Online</option>
-                <option value="multiplayer">Multiplayer</option>
-                <option value="easter-eggs">Easter Eggs</option>
-                <option value="achievements">Achievements</option>
-                <option value="video-guides">Video Guides</option>
-                <option value="website-guides">Website Guides</option>
-                <option value="other">Other</option>
-            </select>
-
-            <button type="submit">Add Bookmark</button>
-        </form>
-
-        <ul id="bookmarkList">
-
-        </ul>
+            <button onclick="redirectToCreateUser()">Create User</button>
+        </div>
     </div>
+
+    <script>
+        function redirectToCreateUser() {
+            window.location.href = '/api/v1/users';
+        }
+    </script>
 </body>
 
-</html>
+</html> 
